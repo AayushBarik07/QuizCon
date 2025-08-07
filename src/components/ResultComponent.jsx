@@ -15,19 +15,20 @@ const ResultComponent = ({answers, setAnswers}) => {
     //   const quiz = QuizQues.find((q => q.id == curr.id))
     //   return quiz.correct !== curr.ans
     // }) : []
-    const totalIncorrect = totalQues - totalCorrect.length;
+    const unAttempted = (totalQues - attemptAnswers > 0) ? totalQues - attemptAnswers : 0;
+    const totalIncorrect = totalQues - totalCorrect.length - unAttempted;
     const percent = ((totalCorrect.length/attemptAnswers)*100).toFixed(0);
+
 
   return (
     <>
       <div className='card px-5 py-5'>
-          {JSON.stringify(answers)}
-          {/* <h1 className='text-center'>You Got 5/{totalLength}.</h1> */}
+          {/* {JSON.stringify(answers)} */}
           <h1 className='text-center'>You Got {totalCorrect.length}/{attemptAnswers}.</h1>
           <div className="text-center mt-3">
             <h4>Percentage: {percent}%</h4>
           </div>
-          <div className="row gx-3 px-4 py-5">
+          <div className="row gx-3 px-4 py-5 justify-content-center">
             <div className="col-sm-6">
               <div className="card py-5 px-3">
                 <h3>Total Correct: {totalCorrect.length}</h3>
@@ -36,6 +37,11 @@ const ResultComponent = ({answers, setAnswers}) => {
             <div className="col-sm-6">
               <div className="card py-5 px-3">
                 <h3>Total Incorrect: {totalIncorrect}</h3>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="card py-5 px-3 mt-3">
+                <h3>Unattempted: {unAttempted}</h3>
               </div>
             </div>
           </div>
