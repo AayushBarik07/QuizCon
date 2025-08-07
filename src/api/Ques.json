@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "What is the capital of France?",
+    "options": ["Paris", "Rome", "Madrid", "Berlin"],
+    "correct": 0
+  },
+  {
+    "id": 2,
+    "title": "What is the capital of Japan?",
+    "options": ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "title": "What is the capital of Canada?",
+    "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+    "correct": 1
+  },
+  {
+    "id": 4,
+    "title": "What is the capital of Australia?",
+    "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+    "correct": 1
+  },
+  {
+    "id": 5,
+    "title": "What is the capital of Brazil?",
+    "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "title": "What is the capital of South Africa?",
+    "options": ["Johannesburg", "Cape Town", "Pretoria", "Durban"],
+    "correct": 2
+  },
+  {
+    "id": 7,
+    "title": "What is the capital of Russia?",
+    "options": ["Moscow", "Saint Petersburg", "Kazan", "Novosibirsk"],
+    "correct": 0
+  },
+  {
+    "id": 8,
+    "title": "What is the capital of India?",
+    "options": ["Mumbai", "Delhi", "New Delhi", "Bangalore"],
+    "correct": 2
+  },
+  {
+    "id": 9,
+    "title": "What is the capital of Egypt?",
+    "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "title": "What is the capital of Germany?",
+    "options": ["Munich", "Frankfurt", "Berlin", "Hamburg"],
+    "correct": 2
+  }
+]
