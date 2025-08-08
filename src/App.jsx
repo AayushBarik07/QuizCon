@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import WelcomePage from './components/welcomePage.jsx'
+import WelcomePage from './components/WelcomePage.jsx'
 import QuesComponent from './components/QuesComponent.jsx'
 import ResultComponent from './components/ResultComponent.jsx'
 
