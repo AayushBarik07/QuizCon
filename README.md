@@ -1,2 +1,5 @@
 ## QuizCon
-# Live Demo - [QUIZCON] quiz-con.vercel.app
+
+## Live Project
+Check out the live quiz app here: [quiz-con.vercel.app](https://quiz-con.vercel.app)
+
