@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import WelcomePage from './components/welcomePage'
-import QuesComponent from './components/QuesComponent'
-import ResultComponent from './components/ResultComponent'
+import WelcomePage from './components/welcomePage.jsx'
+import QuesComponent from './components/QuesComponent.jsx'
+import ResultComponent from './components/ResultComponent.jsx'
 
 function App() {
   const [showScreen, setShowScreen] = useState('Welcome')
