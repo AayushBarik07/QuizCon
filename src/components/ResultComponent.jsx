@@ -22,33 +22,51 @@ const ResultComponent = ({answers, setAnswers}) => {
 
   return (
     <>
-      <div className='card px-5 py-5'>
-          {/* {JSON.stringify(answers)} */}
-          <h1 className='text-center'>You Got {totalCorrect.length}/{attemptAnswers}.</h1>
-          <div className="text-center mt-3">
-            <h4>Percentage: {percent}%</h4>
+      <div className="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
+  <div className="card shadow-lg p-4 text-center" style={{ maxWidth: '800px', width: '100%' }}>
+    <h2 className="mb-3">You Got {totalCorrect.length}/{attemptAnswers}</h2>
+    <h5 className="mb-4">Percentage: <strong>{percent}%</strong></h5>
+
+    <div className="row g-3 justify-content-center">
+      <div className="col-12 col-sm-4">
+        <div className="card border-success shadow-sm h-100">
+          <div className="card-body">
+            <h5 className="card-title text-success">Total Correct</h5>
+            <h3>{totalCorrect.length}</h3>
           </div>
-          <div className="row gx-3 px-4 py-5 justify-content-center">
-            <div className="col-sm-6">
-              <div className="card py-5 px-3">
-                <h3>Total Correct: {totalCorrect.length}</h3>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card py-5 px-3">
-                <h3>Total Incorrect: {totalIncorrect}</h3>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card py-5 px-3 mt-3">
-                <h3>Unattempted: {unAttempted}</h3>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <div className="col-12 col-sm-4">
+        <div className="card border-danger shadow-sm h-100">
+          <div className="card-body">
+            <h5 className="card-title text-danger">Total Incorrect</h5>
+            <h3>{totalIncorrect}</h3>
           </div>
-          <div className='d-flex justify-content-center'>
-            <button onClick={() => window.location.reload()} className='btn px-4 btn-success'>Re-Start</button>
+        </div>
+      </div>
+
+      <div className="col-12 col-sm-4">
+        <div className="card border-secondary shadow-sm h-100">
+          <div className="card-body">
+            <h5 className="card-title text-secondary">Unattempted</h5>
+            <h3>{unAttempted}</h3>
           </div>
-      </div> 
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-4">
+      <button 
+        onClick={() => window.location.reload()} 
+        className="btn btn-success btn-lg px-4"
+      >
+        Re-Start
+      </button>
+    </div>
+  </div>
+</div>
+
     </>
   )
 }
